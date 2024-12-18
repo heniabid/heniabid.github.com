@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact - Heni Abid</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Contactez-moi</h1>
+        <nav>
+            <ul>
+                <li><a href="accueil.html">Accueil</a></li>
+                <li><a href="parcours.html">Parcours Académique</a></li>
+                <li><a href="competences.html">Compétences</a></li>
+                <li><a href="stages.html">Stages</a></li>
+                <li><a href="manifestation.html">Manifestations</a></li>
+                <li><a href="contact.html">Contact</a></li>
+     
+                <li><a href="matieres.html">Matières</a></li>
+                <li><a href="passions.html">Passions</a></li>
+                <li><a href="quiz.html">Quiz</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="contact">
+        <h2>Formulaire de Contact</h2>
+        <form>
+            <div>
+                <label for="name">Nom :</label>
+                <input type="text" id="name" name="name" placeholder="Votre nom" required>
+            </div>
+            <div>
+                <label for="email">Email :</label>
+                <input type="email" id="email" name="email" placeholder="Votre email" required>
+            </div>
+            <div>
+                <label for="subject">Sujet :</label>
+                <input type="text" id="subject" name="subject" placeholder="Sujet de votre message" required>
+            </div>
+            <div>
+                <label for="message">Message :</label>
+                <textarea id="message" name="message" placeholder="Écrivez votre message ici..." rows="5" required></textarea>
+            </div>
+            <button type="submit" disabled>Envoyer</button>
+        </form>
+        <p style="color: red; font-size: 0.9em; margin-top: 10px;">
+            * Fonctionnalité d'envoi désactivée sur cette page.
+        </p>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Heni Abid - Tous droits réservés</p>
+    </footer>
+</body>
+</html>

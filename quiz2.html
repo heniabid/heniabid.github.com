@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz Technologie - Heni Abid</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Quiz sur la Technologie</h1>
+        <nav>
+            <ul>
+                <li><a href="accueil.html">Accueil</a></li>
+                <li><a href="parcours.html">Parcours Académique</a></li>
+                <li><a href="competences.html">Compétences</a></li>
+                <li><a href="stages.html">Stages</a></li>
+                <li><a href="manifestation.html">Manifestations</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="matieres.html">Matières</a></li>
+                <li><a href="passions.html">Passions</a></li>
+                <li><a href="quiz.html">Quiz</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="quiz-section">
+        <h2>Testez vos connaissances en technologie</h2>
+        <div class="quiz-container">
+            <!-- Image at the top dynamically loaded -->
+            <div id="quiz-image-container">
+              <img id="quiz-image" src="" alt="Quiz Image">
+            </div>
+        
+            <div id="quiz-box">
+              <h1>Interactive Quiz</h1>
+              <div id="question-container"></div>
+        
+              <!-- Grid of answer options -->
+              <div id="answer-grid" class="answer-grid"></div>
+        
+              <button id="next-btn" class="btn">Next</button>
+              <div id="progress-container">
+                <div id="progress-bar"></div>
+              </div>
+            </div>
+          </div>
+        
+          <!-- Score Modal -->
+          <div id="score-modal" class="modal">
+            <div class="modal-content">
+              <h2>Quiz Results</h2>
+              <p id="score-feedback"></p>
+              <div id="score-visualization">
+                <h3>Your Score:</h3>
+                <div id="score-display">0%</div>
+              </div>
+              <ul id="correct-answers-list"></ul>
+              <button id="restart-btn" class="btn">Restart Quiz</button>
+            </div>
+          </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Heni Abid - Tous droits réservés</p>
+    </footer>
+
+    <script>
+        function calculateScore() {
+            const correctAnswers = {
+                q1: 'A',
+                q2: 'B',
+                q3: 'A'
+                // Ajoutez les bonnes réponses ici pour d'autres questions
+            };
+
+            let score = 0;
+            let totalQuestions = Object.keys(correctAnswers).length;
+            let resultText = "<h3>Résultats :</h3>";
+
+            for (let question in correctAnswers) {
+                let selectedOption = document.querySelector(`input[name="${question}"]:checked`);
+                if (selectedOption && selectedOption.value === correctAnswers[question]) {
+                    score++;
+                } else {
+                    resultText += `<p>${question} : Réponse correcte - ${correctAnswers[question]}</p>`;
+                }
+            }
+
+            resultText = `<p>Votre score : ${score} / ${totalQuestions}</p>` + resultText;
+            document.getElementById("quiz-result").innerHTML = resultText;
+        }
+    </script>
+</body>
+</html>

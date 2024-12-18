@@ -1,0 +1,561 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+header {
+    background-color: #333;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+}
+
+nav ul {
+    
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+section.bio {
+    padding: 20px;
+    background-color: white;
+    margin: 20px auto;
+    max-width: 900px;
+}
+
+section.bio h2 {
+    color: #333;
+}
+
+section.bio p {
+    font-size: 1.2em;
+    line-height: 1.5;
+}
+
+.socials {
+    margin-top: 20px;
+}
+
+.socials a {
+    margin-right: 15px;
+    text-decoration: none;
+    color: #0077b5;
+}
+section.parcours {
+    padding: 20px;
+    background-color: white;
+    margin: 20px auto;
+    max-width: 900px;
+}
+section.parcours h2 {
+    color: #333;
+    text-align: center;
+}
+.diplome {
+    margin-bottom: 20px;
+    padding: 15px;
+    border: 1px solid #ddd;
+    background-color: #f9f9f9;
+}
+.diplome img {
+    height: 20%;
+    width: 20%;
+}
+
+.diplome h3 {
+    color: #0077b5;
+}
+
+.diplome p {
+    font-size: 1.1em;
+    margin: 5px 0;
+}
+
+.diplome img {
+    max-width: 100%;
+    height: auto;
+    
+    display: block;
+}
+section.competences {
+    padding: 20px;
+    background-color: white;
+    margin: 20px auto;
+    max-width: 900px;
+}
+
+section.competences h2 {
+    color: #333;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+section.competences ul {
+    list-style-type: square;
+    margin-left: 20px;
+}
+
+section.competences ul li {
+    font-size: 1.2em;
+    margin-bottom: 5px;
+}
+section.stages {
+    padding: 20px;
+    background-color: white;
+    margin: 20px auto;
+    max-width: 900px;
+}
+
+section.stages h2 {
+    color: #333;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.experience {
+    border: 1px solid #ddd;
+    background-color: #f9f9f9;
+    padding: 15px;
+    margin-bottom: 20px;
+}
+
+.experience h3 {
+    color: #0077b5;
+    margin-bottom: 5px;
+}
+
+.experience p {
+    font-size: 1.1em;
+    margin: 5px 0;
+}
+
+.experience p strong {
+    color: #333;
+}
+section.manifestations {
+    padding: 20px;
+    background-color: white;
+    margin: 20px auto;
+    max-width: 900px;
+}
+
+section.manifestations h2 {
+    color: #333;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.evenement {
+    border: 1px solid #ddd;
+    background-color: #f9f9f9;
+    padding: 15px;
+    margin-bottom: 20px;
+}
+
+.evenement h3 {
+    color: #0077b5;
+}
+
+.evenement p {
+    font-size: 1.1em;
+    margin: 5px 0;
+}
+
+.evenement img {
+    max-width: 100%;
+    height: auto;
+    margin-top: 10px;
+}
+section.matieres {
+    padding: 20px;
+    background-color: white;
+    margin: 20px auto;
+    max-width: 900px;
+}
+
+section.matieres h2 {
+    color: #333;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+section.matieres ul {
+    list-style-type: disc;
+    margin-left: 20px;
+}
+
+section.matieres ul li {
+    font-size: 1.2em;
+    margin-bottom: 10px;
+}
+
+.projet {
+    border: 1px solid #ddd;
+    background-color: #f9f9f9;
+    padding: 15px;
+    margin-bottom: 20px;
+}
+
+.projet h3 {
+    color: #0077b5;
+    margin-bottom: 5px;
+}
+
+.projet p {
+    font-size: 1.1em;
+    margin: 5px 0;
+}
+section.passions {
+    padding: 20px;
+    background-color: white;
+    margin: 20px auto;
+    max-width: 900px;
+    text-align: center;
+}
+
+section.passions h2 {
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.passion, .sport {
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+    background-color: #f9f9f9;
+    padding: 15px;
+    text-align: center;
+}
+
+.passion img, .sport img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+    border-radius: 8px;
+}
+
+section.passions ul {
+    list-style-type: disc;
+    text-align: left;
+    margin-left: 20px;
+    font-size: 1.2em;
+}
+.quiz-section {
+    padding: 20px;
+    background-color: white;
+    margin: 20px auto;
+    max-width: 800px;
+    text-align: left;
+}
+
+.quiz-section h2 {
+    color: #333;
+    text-align: center;
+}
+
+.question {
+    margin-bottom: 20px;
+}
+
+button {
+    background-color: #0077b5;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+button:hover {
+    background-color: #005fa3;
+}
+
+.result {
+    margin-top: 20px;
+    padding: 15px;
+    border: 1px solid #ddd;
+    background-color: #f9f9f9;
+}
+.contact {
+    padding: 20px;
+    background-color: white;
+    margin: 20px auto;
+    max-width: 800px;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.contact h2 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+/* Style des champs de formulaire */
+.contact form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.contact form div {
+    display: flex;
+    flex-direction: column;
+}
+
+.contact form label {
+    font-weight: bold;
+    color: #0077b5;
+    margin-bottom: 5px;
+}
+
+.contact form input,
+.contact form textarea {
+    padding: 10px;
+    font-size: 1em;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    transition: border-color 0.3s ease-in-out;
+}
+
+.contact form input:focus,
+.contact form textarea:focus {
+    border-color: #0077b5;
+    outline: none;
+}
+
+/* Style pour le bouton */
+.contact form button {
+    background-color: #0077b5;
+    color: white;
+    padding: 10px 15px;
+    font-size: 1em;
+    border: none;
+    border-radius: 5px;
+    cursor: not-allowed; /* Indique que le bouton est désactivé */
+    opacity: 0.7;
+}
+
+.contact form button:enabled {
+    cursor: pointer;
+    opacity: 1;
+    transition: opacity 0.3s ease-in-out;
+}
+
+
+.contact p {
+    text-align: center;
+    font-size: 0.9em;
+    color: #555;
+}
+
+@media screen and (max-width: 600px) {
+    .contact {
+        padding: 15px;
+        margin: 10px;
+    }
+
+    .contact form {
+        gap: 10px;
+    }
+}
+
+
+footer {
+    position: fixed;
+    text-align: center;
+    background-color: #333;
+    color: white;
+    padding: 5px;
+    bottom: 0;
+    width: 100%;
+    height: 5%;
+}
+
+
+
+  
+  /* Quiz Container */
+  .quiz-container {
+    text-align: center;
+    color: #fff;
+    width: 100%;
+    max-width: 700px;
+  }
+  
+  /* Image Container */
+  #quiz-image-container {
+    margin-bottom: 20px;
+  }
+  #quiz-image {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+  }
+  
+  /* Quiz Box */
+  #quiz-box {
+    background: #fff;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    color: #333;
+  }
+  
+  #quiz-box h1 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    color: #555;
+  }
+  
+  /* Question Container */
+  #question-container {
+    font-size: 18px;
+    font-weight: bold;
+    margin: 20px 0;
+  }
+  
+  /* Answer Grid */
+  .answer-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+    margin-bottom: 20px;
+  }
+  .answer-grid label {
+    display: block;
+    padding: 15px;
+    background-color: #f0f0f0;
+    border-radius: 10px;
+    text-align: center;
+    font-size: 18px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+  }
+  .answer-grid label:hover {
+    background-color: #0077b5;
+    color: white;
+  }
+  
+  /* Next Button */
+  #next-btn {
+    background: #0077b5;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s;
+  }
+  #next-btn:hover {
+    background: #333;#
+  }
+  
+  /* Progress Bar */
+  #progress-container {
+    width: 100%;
+    background-color: #ccc;
+    height: 10px;
+    margin: 20px 0;
+    border-radius: 5px;
+    overflow: hidden;
+  }
+  #progress-bar {
+    width: 0%;
+    height: 100%;
+    background-color: #0077b5;
+    transition: width 0.3s ease;
+  }
+  
+  /* Modal */
+  .modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    justify-content: center;
+    align-items: center;
+  }
+  .modal-content {
+    background: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    color: #333;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  }
+  .modal-content h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+  .modal-content #score {
+    font-size: 20px;
+    margin-bottom: 15px;
+  }
+  .modal-content ul {
+    list-style: none;
+    padding: 0;
+    margin: 10px 0;
+  }
+  .modal-content li {
+    text-align: left;
+    margin: 5px 0;
+    font-size: 16px;
+  }
+  .modal-content .btn {
+    background: #0077b5;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s;
+  }
+  .modal-content .btn:hover {
+    background: #333;
+  }
+  
+  /* Animated Score */
+  #score-visualization {
+    margin: 20px 0;
+    font-size: 18px;
+    color: #555;
+    text-align: center;
+  }
+  #score-display {
+    font-size: 36px;
+    font-weight: bold;
+    color: #0077b5;
+    animation: scoreAnimation 1s ease;
+  } 
+  @keyframes scoreAnimation {
+    from {
+      font-size: 24px;
+      color: #f44336;
+    }
+    to {
+      font-size: 36px;
+      color: #0077b5;
+    }
+  }
